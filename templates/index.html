@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru House Price Prediction</title>
+</head>
+
+<head>
+    <style type="text/css">
+  
+        label {
+          font: 5px;
+        }
+  
+        input {
+          margin: 5px;
+          padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("https://i.ytimg.com/vi/_ICcaaFNX2o/maxresdefault.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <h1>Bengaluru House Price Prediction</h1>
+    <form action="/get_predictiton" method="get">
+<h1 style="font-size: 30;">
+<b>
+        <div class="field-group">
+            <label style="color: rgb(183, 40, 8);">Your Name:</label>
+            <input type="text" name="name" class="input-field" placeholder="Enter Your Name Here" autocomplete="off">
+        <br>
+        <br>
+        <div class="field-group">
+        <label>Location:</label>
+        <input type="text" name="location"class="input-field" placeholder="e.g Kanakpura Road" autocomplete="off" >
+
+        <br>
+        <br>
+
+        <div class="field-group">
+        <label>Total Area:</label>
+        <input type="text" name="total_sqft"class="input-field" placeholder="Enter area in sqft" autocomplete="off">
+    
+        <br>
+        <br>
+
+        <div class="field-group">
+        <label>Size:</label>
+        <input type="text" name="size"class="input-field" placeholder="Enter Size e.g 1 BHK" autocomplete="off">
+
+        <br>
+        <br>
+
+
+        <div class="field-group">
+        <label>Bath:</label>
+        <input type="text" name="bath"class="input-field" placeholder="Enter no. of bath" autocomplete="off">
+        
+        <br>
+        <br>
+
+        <div class="field-group">
+        <label><mark style="color: black;background-color: aliceblue;">Balcony:</mark></label>
+        <input type="text" name="balcony"class="input-field" placeholder="enter no.of balcony" autocomplete="off">
+        
+    
+        <br>
+        <br>
+
+        <label><mark style="color: black;background-color: aliceblue;">Area-Type:</mark></label>
+        <select name="area_type" size="2px">
+            <option  value="Carpet  Area">Carpet Area</option>
+            <option  value="Built-up  Area">Built-up Area</option>
+            <option  value="Super built-up  Area">Super built-up Area</option>
+            <option  value="Plot  Area">Plot Area</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label><mark style="color: black; background-color: aliceblue;size: '10';">Availability:</mark></label>
+        <select name="availability"size="2px">
+            <option value="Ready To Move">Ready To Move</option>
+            <option value="Immediate Possession">Immediate Possession</option>
+            <option value="available_dates">Under Construction</option>       
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit", value="Get Price">
+        <br>
+
+        <p><b><h1 style="font-size: 30px; color: rgb(157, 2, 2);font-style: italic;"><mark style="color: rgb(183, 18, 3);background-color: #fcfbfb;">Hello {{user_name}}</mark></h1> </b></p>
+        <p style="font-size: 20px ;font-style: italic;color: rgb(1, 1, 1);"><mark style="color: rgb(10, 10, 10);background-color: #fcfbfb;"> The predicted price of Your expected House is<b><u> Rs. {{prediction}} lac.</mark></u></b></p>
+</b>
+</h1>
+
+    </form>
+    
+</body>
+</html>
